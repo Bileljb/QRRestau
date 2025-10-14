@@ -1,0 +1,2 @@
+in the auth controler  "sendPasswordResetEmail(user.email, `http://localhost:3000/reset-password?token=${resetToken}`);"
+change the url when deploying
