@@ -1,5 +1,7 @@
 import FloatingShape from "./components/FloatingShape";
-import {Route, Routes} from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+import SignUpPage from "./pages/SignUpPage";
+import LoginPage from "./pages/LoginPage";
 function App() {
   return (
     <div
@@ -27,9 +29,12 @@ function App() {
         left="10%"
         delay={2}
       />
-      <Route path="/" element={"Home"}/>
-      <Route path="/signup" element={<SignUpPage/>}/>
-      <Route path="/login" element={<LoginPage/>}/>
+      <Routes>
+        <Route path="/" element={"Home"} />
+        <Route path="/signup" element={<SignUpPage />} />
+        <Route path="/login" element={<LoginPage />} />
+      </Routes>
+
     </div>
   );
 }
